@@ -49,6 +49,6 @@ def endpoint(id=None):
 
   if request.method == 'DELETE':
     Animals.delete().where(Animals.id == id).execute()
-    return "Person " + str(id) + " deleted."
+    return "Animals " + str(id) + " deleted."
 
 app.run(debug=True, port=3030)
